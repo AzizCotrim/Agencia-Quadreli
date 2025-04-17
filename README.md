@@ -1,6 +1,8 @@
-# 🎨 Site Oficial - Agência Quadreli
+# 🎨 Projeto de Portfólio - Agência Quadreli
 
-Este é um projeto de site institucional desenvolvido com **ASP.NET MVC (C#)** para a **Agência Quadreli**, que gentilmente permitiu o uso de suas artes e imagens. O objetivo é criar um portal moderno, com um painel de controle que facilite a atualização e gerenciamento de imagens, utilizando banco de dados e tecnologias .NET.
+Este é um projeto fictício de site institucional desenvolvido com **ASP.NET MVC (C#)** para fins de estudo e portfólio. Recebi a permissão da **Agência Quadreli** para utilizar suas artes visuais exclusivamente neste projeto de demonstração.
+
+O objetivo é criar um portal moderno, com um painel de controle que facilite a atualização e gerenciamento das imagens, utilizando banco de dados e tecnologias .NET.
 
 ## 🚀 Funcionalidades
 
