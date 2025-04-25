@@ -1,14 +1,24 @@
-/*Eu criei agora*/
-
+/*Geral*/
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
+body{
+    background-color: black;
+}
 
 .container{
     padding: 0 2%;
     max-width: 1360px;
+}
+
+.fora {
+    padding: 0;
+}
+
+.flex{
+    display: flex;
 }
 
 /*Menu-cima*/
@@ -38,3 +48,51 @@
 .rodape{
     text-align: center;
 }
+
+/*HOME-bem-vindo*/
+
+.bem-vindo{
+    padding: 10px 20px;
+    color: white;
+    background-color: #c4c4c4;
+}
+    
+.envolto{
+    justify-content:space-between;
+    padding: 20px 45px;
+}
+
+.imagem{
+    width: 400px;
+    height: 430px;
+}
+
+.texto{
+    justify-items: center;
+}
+
+.titulo{
+    justify-items:center;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.img{
+    background-color: green;
+    width: 100%;
+    height: 100%;
+}
+
+p{
+    width: 400px;
+    text-align: justify;
+    padding: 10px 0;
+}
+.texto a{
+    padding: 10px 50px;
+    background-color: grey;
+    text-decoration:none;
+    color: white;
+    border-radius: 10px;
+}
+
