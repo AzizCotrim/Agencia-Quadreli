@@ -10,16 +10,16 @@
 </head>
 <body>
     <header>
-        <nav class="menu-cima">
+        <nav class="menu-cima fixed-top">
             <div class="container">
                 <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">
-                    <div class="logo"></div>
+                    <div class="logo"></div><!--substituir por <img> depois>-->
                 </a>
                 <div class="menu-link">
-                    <a asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                    <a asp-area="" asp-controller="Portfolio" asp-action="Index">Portifolio</a>
-                    <a asp-area="" asp-controller="Contact" asp-action="Index">Contato</a>
-                    <a asp-area="" asp-controller="About" asp-action="">Sobre</a>
+                    <a class="menu-opt" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                    <a class="menu-opt" asp-area="" asp-controller="Portfolio" asp-action="Index">Portifolio</a>
+                    <a class="menu-opt" asp-area="" asp-controller="Contact" asp-action="Index">Contato</a>
+                    <a class="menu-opt" asp-area="" asp-controller="About" asp-action="">Sobre</a>
                 </div><!--menu-link->
             </div><!--container-->
         </nav><!--Menu-cima-->
@@ -30,7 +30,7 @@
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
+    <footer class="footer text-muted">
         <div class="container rodape">
             &copy; 2025 - Agencia Quadreli 
         </div><!--rodape-->
