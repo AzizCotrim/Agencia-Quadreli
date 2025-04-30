@@ -21,6 +21,10 @@ body{
     display: flex;
 }
 
+.grid{
+    display: grid;
+}
+
 /*Menu-cima*/
 
 .logo {
@@ -144,7 +148,26 @@ body{
 
 /*HOME-sevicos*/
 
+.HOME-servicos{
+    padding: 30px 0;
+}
+
 .HOME-servicos h2{
     text-align: center;
+}
+
+.servicos-wrapper{
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+}
+
+.quadro-servico{
+    width: calc(50% - 40px);
+    padding: 20px;
+}
+
+.quadro-servico:nth-child(odd){
+    border-right: 2px solid
 }
 
