@@ -96,9 +96,9 @@ body{
     background-size:cover;
 }
 
-/*HOME-bem-vindo*/
+/*HOME-about*/
 
-.HOME-bem-vindo{
+.HOME-about{
     padding: 10px 20px;
     background-color: #c4c4c4;
 }
@@ -140,5 +140,11 @@ body{
     text-decoration:none;
     color: white;
     border-radius: 10px;
+}
+
+/*HOME-sevicos*/
+
+.HOME-servicos h2{
+    text-align: center;
 }
 
