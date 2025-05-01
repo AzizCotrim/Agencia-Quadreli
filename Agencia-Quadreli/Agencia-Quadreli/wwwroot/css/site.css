@@ -25,6 +25,11 @@ body{
     display: grid;
 }
 
+.titulo{
+    text-align: center;
+
+}
+
 /*Menu-cima*/
 
 .logo {
@@ -192,6 +197,16 @@ body{
 
 /*HOME-portifolio*/
 
+.mosaico{
+    grid-template-columns: repeat(3, 1fr);
+}
 
+.image{
+    padding: 10px;
+}
+
+.image img{
+    width: 100%;
+}
 
 /*HOME-depoimentos*/

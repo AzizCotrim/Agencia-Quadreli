@@ -8,11 +8,17 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="wwwroot\img\outros\**" />
+    <Content Remove="wwwroot\img\outros\**" />
+    <EmbeddedResource Remove="wwwroot\img\outros\**" />
+    <None Remove="wwwroot\img\outros\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.7" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="wwwroot\img\outros\" />
     <Folder Include="wwwroot\img\portifolio\" />
   </ItemGroup>
 
