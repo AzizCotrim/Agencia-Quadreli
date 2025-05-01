@@ -54,9 +54,16 @@ body{
 /*RODAPE*/
 
 .rodape{
-    background-color: white;
-    text-align: center;
+    height: 40px;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
 
+}
+
+.rodape p{
+    color: white;
+   margin: 0;
 }
 
 /*first-sec*/
@@ -121,7 +128,7 @@ body{
     justify-items: center;
 }
 
-.titulo{
+.titulo-wrapper{
     justify-items:center;
     width: 100%;
     margin-bottom: 10px;
@@ -165,9 +172,26 @@ body{
 .quadro-servico{
     width: calc(50% - 40px);
     padding: 20px;
+    justify-items: center;
 }
 
 .quadro-servico:nth-child(odd){
     border-right: 2px solid
 }
 
+.quadro-servico h4{
+    text-align: center;
+    padding: 20px 0 10px 0;
+}
+
+.icon{
+    background-color: green;
+    width: 100px;
+    height: 70px;
+}
+
+/*HOME-portifolio*/
+
+
+
+/*HOME-depoimentos*/
