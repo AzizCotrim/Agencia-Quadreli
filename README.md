@@ -36,7 +36,8 @@ Todas as imagens utilizadas neste projeto são de autoria da **Agência Quadreli
 ## ✅ Status do Projeto
 
 🚧 Em desenvolvimento  
-Criação do Projeto
+- Criação do Projeto
+- Criação de protótipo
 
 ## 📌 Observações
 
