@@ -30,6 +30,10 @@ body{
 
 }
 
+section{
+    border-bottom: 1px solid black;
+}
+
 /*Menu-cima*/
 
 .logo {
@@ -150,7 +154,7 @@ body{
     text-align: justify;
     padding: 10px 0;
 }
-.texto a{
+.link{
     padding: 10px 50px;
     background-color: grey;
     text-decoration:none;
@@ -199,6 +203,7 @@ body{
 
 .mosaico{
     grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 20px;
 }
 
 .image{
@@ -209,4 +214,66 @@ body{
     width: 100%;
 }
 
+.link-wrapper{
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+/*.HOME-portfolio .container{
+    justify-content: center;
+}*/
+
 /*HOME-depoimentos*/
+
+.HOME-depoimentos{
+    padding: 30px 0;
+}
+
+.depoimentos-wrapper {
+    position: relative;
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    padding: 40px;
+    background: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #ccc;
+}
+
+.depoimento-slide {
+    display: none;
+    font-size: 18px;
+}
+
+.depoimento-slide.active {
+    display: block;
+}
+
+.depoimento-slide img{
+    background-color: green;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.dots-wrapper{
+    margin-top: 10px;
+    justify-content: center;
+}
+
+.dot {
+    height: 12px;
+    width: 12px;
+    margin: 0 5px;
+    display: inline-block;
+    background-color: #bbb;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.dot.active {
+    background-color: #333;
+}
+

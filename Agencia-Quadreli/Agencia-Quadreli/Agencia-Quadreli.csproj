@@ -19,6 +19,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="wwwroot\img\icons\" />
     <Folder Include="wwwroot\img\portifolio\" />
   </ItemGroup>
 

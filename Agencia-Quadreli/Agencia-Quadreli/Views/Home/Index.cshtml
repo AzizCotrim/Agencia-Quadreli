@@ -33,7 +33,7 @@
                         At ut et dolor et blandit elit sanctus clita duis tempor vulputate gubergren nisl stet magna duo sit in dolor invidunt amet feugiat lorem illum elitr labore nam wisi vero dignissim amet lorem ea sed placerat sed velit tempor et sea dolore kasd aliquip quis dolore sanctus nonumy eu lorem ipsum ea sed velit stet amet euismod duo esse sea labore eos voluptua tempor voluptua sed est facilisi exerci diam laoreet clita voluptua ullamcorper kasd sanctus vel diam voluptua eos invidunt id sed lorem diam suscipit lorem delenit lorem ea dolores nostrud justo sed duis labore vero at accumsan erat
                     </p>
                     
-                    <a asp-controller="About" asp-action="Index">Saiba mais...</a>
+                    <a class="link" asp-controller="About" asp-action="Index">Saiba mais...</a>
                 </div><!--texto-->
             </div><!--flex-->
     </div><!--container-->
@@ -90,9 +90,35 @@
                 <img src="~/img/portifolio/dia do cliente2024.png" alt="Alternate Text" />
             </div><!--image-->
         </div><!--mosaico-->
+
+        <div class="link-wrapper flex">
+            <a class="link" asp-controller="Portfolio" asp-action="Index">Portifolio Completo</a>
+        </div><!--link-wrapper->
+
     </div><!--container-->
 </section><!--HOME-portifolio-->
 
 <section class="HOME-depoimentos">
-
+    <div class="container">
+        <h1 class="titulo">Depoimentos</h1>
+        <div class="depoimentos-wrapper">
+            <div class="depoimento-slide active">
+                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ut nunc diam. Vestibulum ante ipsum primis in faucibus orci luctus et"</p>
+                <span><img />- Ana</span>
+            </div>
+            <div class="depoimento-slide">
+                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ut nunc diam. Vestibulum ante ipsum primis in faucibus orci luctus et"</p>
+                <span><img />- João</span>
+            </div>
+            <div class="depoimento-slide">
+                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ut nunc diam. Vestibulum ante ipsum primis in faucibus orci luctus et"</p>
+                <span>- Carla</span>
+            </div>
+        </div><!--depoimentos-wrapper-->
+        <div class="dots-wrapper flex">
+            <div class="dot active"></div>
+            <div class="dot"></div>
+            <div class="dot"></div> 
+        </div><!--dots-wrapper-->
+    </div><!--container-->
 </section><!--HOME-depoimentos-->
