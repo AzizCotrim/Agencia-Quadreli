@@ -30,10 +30,6 @@ body{
 
 }
 
-section{
-    border-bottom: 1px solid black;
-}
-
 /*Menu-cima*/
 
 .logo {
@@ -168,10 +164,6 @@ section{
     padding: 30px 0;
 }
 
-.HOME-servicos h2{
-    text-align: center;
-}
-
 .servicos-wrapper{
     flex-wrap: wrap;
     gap: 40px;
@@ -194,14 +186,23 @@ section{
 }
 
 .icon{
-    background-color: green;
     width: 100px;
     height: 70px;
+    margin-bottom: 10px;
+}
+
+.icon img{
+    width:100%
 }
 
 /*HOME-portifolio*/
 
-.mosaico{
+.HOME-portfolio{
+    padding: 15px 0;
+    background-color: green;
+}
+
+.mosaico {
     grid-template-columns: repeat(3, 1fr);
     margin-bottom: 20px;
 }
@@ -219,25 +220,22 @@ section{
     margin-bottom: 30px;
 }
 
-/*.HOME-portfolio .container{
-    justify-content: center;
-}*/
-
 /*HOME-depoimentos*/
 
 .HOME-depoimentos{
-    padding: 30px 0;
+    padding: 30px 0 60px 0;
+    background-color: dimgray;
 }
 
 .depoimentos-wrapper {
     position: relative;
     width: 60%;
-    margin: auto;
+    margin: 20px auto;
     text-align: center;
     padding: 40px;
     background: #f4f4f4;
     border-radius: 10px;
-    box-shadow: 0 0 10px #ccc;
+    box-shadow: 0 0 10px black;
 }
 
 .depoimento-slide {
