@@ -2,5 +2,33 @@
     ViewData["Title"] = "Contato";
 }
 
-<h1>Index</h1>
+<head>
+    <link href="~/css/about.css" rel="stylesheet" />
+</head>
+
+<section class="form-sec">
+    <div class="container flex">
+        <div class="form-wrapper flex">
+            <h1>Contato</h1>
+            <form action="/" method="post">
+                <div class="form-line flex">
+                    <label for="name">Nome:</label>
+                    <input type="text" name="name" placeholder="Digite seu Nome..."/>
+                </div><!--form-line-->
+
+                <div class="form-line flex">
+                    <label for="phone">Celular:</label>
+                    <input type="text" name="phone" placeholder="Digite o seu numero de whatsapp..."/>
+                </div><!--form-line-->
+
+                <div class="form-line flex">
+                    <label for="message">Mensagem:</label>
+                    <textarea name="message" placeholder="Digite a sua mensagem..."></textarea>
+                </div><!--form-line-->
+
+                <button type="submit">Enviar</button>
+            </form>
+        </div><!--form-wrapper-->
+    </div><!--container-->
+</section>
 

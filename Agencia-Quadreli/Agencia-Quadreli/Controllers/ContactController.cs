@@ -5,5 +5,7 @@ namespace Agencia_Quadreli.Controllers {
         public IActionResult Index() {
             return View();
         }
+
+        
     }
 }
