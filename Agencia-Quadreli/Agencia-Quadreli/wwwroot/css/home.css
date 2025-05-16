@@ -1,12 +1,9 @@
 ﻿/*first-sec*/
-
 .first-sec {
     height: 600px;
-    margin-bottom: 70px;
 }
 
 .first-sec .container {
-    top: 70px;
     position: relative;
     height: 100%;
 }
