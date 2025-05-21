@@ -59,7 +59,7 @@ body{
 /*BODY*/
 
 section:first-of-type {
-    margin-top: 70px;
+    padding-top: 70px;
 }
 
 /*RODAPE*/
