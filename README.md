@@ -37,7 +37,8 @@ Todas as imagens utilizadas neste projeto são de autoria da **Agência Quadreli
 
 🚧 Em desenvolvimento  
 - Criação do Projeto
-- Criação do protótipo da Página Inicial 
+- Criação do protótipo da Página Inicial
+- Criação da Página Portifolio
 
 ## 📌 Observações
 
