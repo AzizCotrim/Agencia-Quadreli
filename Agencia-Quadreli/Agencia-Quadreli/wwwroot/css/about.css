@@ -1,1 +1,23 @@
-﻿
+﻿.sobre{
+    
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 20px 0;
+}
+
+.sobre h1{
+    text-align: center;
+    width: 100%;
+    padding-bottom: 20px;
+
+}
+
+.img-wrapper {
+    width: 300px;
+    height: 400px;
+    background-color: green;
+}
+
+.text-wrapper{
+    width: 800px;
+}
