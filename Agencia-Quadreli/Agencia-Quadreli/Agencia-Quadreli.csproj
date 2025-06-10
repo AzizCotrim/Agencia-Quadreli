@@ -10,10 +10,10 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="wwwroot\img\outros\**" />
-    <Content Remove="wwwroot\img\outros\**" />
-    <EmbeddedResource Remove="wwwroot\img\outros\**" />
-    <None Remove="wwwroot\img\outros\**" />
+    <Compile Remove="wwwroot\NewFolder\**" />
+    <Content Remove="wwwroot\NewFolder\**" />
+    <EmbeddedResource Remove="wwwroot\NewFolder\**" />
+    <None Remove="wwwroot\NewFolder\**" />
   </ItemGroup>
 
   <ItemGroup>
@@ -23,6 +23,7 @@
 
   <ItemGroup>
     <Folder Include="wwwroot\img\icons\" />
+    <Folder Include="wwwroot\img\Outros\" />
     <Folder Include="wwwroot\img\portifolio\" />
   </ItemGroup>
 

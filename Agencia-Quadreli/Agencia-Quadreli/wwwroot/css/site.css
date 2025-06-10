@@ -1,11 +1,18 @@
 /*Geral*/
+@font-face{
+    font-family: 'My-Avenir';
+    src: url('../fonts/Avenir Font Family/AvenirLTStd-Medium.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 body{
-
+    font-family: My-Avenir;
 }
 
 .container{
@@ -65,14 +72,21 @@ section:first-of-type {
 /*RODAPE*/
 
 .rodape{
-    height: 40px;
+    padding:
+    flex-wrap: wrap;
     background-color: black;
     justify-content: center;
     align-items: center;
 
 }
 
+.rodape > .logo{
+    width:100px;
+    height:100px;
+}
+
 .rodape p{
+    width: 100%;
     color: white;
-   margin: 0;
+    margin: 0;
 }

@@ -45,34 +45,36 @@
 
 .envolto {
     justify-content: space-between;
-    padding: 20px 45px;
+    padding: 40px 60px;
+    flex-wrap: wrap;
+}
+.envolto h4{
+    width: 100%;
+    text-align:center;
+    padding-bottom: 35px;
 }
 
 .imagem {
-    width: 400px;
-    height: 430px;
+    width: 440px;
+    height: 440px;
 }
 
 .texto {
+    width: 500px;
     justify-items: center;
-}
-
-.titulo-wrapper {
-    justify-items: center;
-    width: 100%;
-    margin-bottom: 10px;
-}
-
-.img {
-    background-color: green;
-    width: 100%;
-    height: 100%;
+    padding: 10px 0;
+    font-size: 18px;
 }
 
 .texto p {
-    width: 400px;
     text-align: justify;
-    padding: 10px 0;
+}
+
+.img {
+    background-image: url(../img/Outros/IMG_1288.jpg);
+    background-size: contain;
+    width: 100%;
+    height: 100%;
 }
 
 .link {
@@ -87,43 +89,47 @@
 
 .HOME-servicos {
     padding: 30px 0;
+    background-color: #323232;
+    color: white;
 }
 
 .servicos-wrapper {
     flex-wrap: wrap;
-    gap: 40px;
-    justify-content: center;
+    justify-content: space-between;
 }
 
-.quadro-servico {
-    width: calc(50% - 40px);
-    padding: 20px;
-    justify-items: center;
+.servicos-wrapper p{
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
 }
 
-    .quadro-servico:nth-child(odd) {
-        border-right: 2px solid
-    }
-
-    .quadro-servico h4 {
-        text-align: center;
-        padding: 20px 0 10px 0;
-    }
-
-.icon {
-    width: 100px;
-    height: 70px;
-    margin-bottom: 10px;
+.quadro-servico{
+    margin: 30px 0px;
+    width: 400px;
+    height: 250px;
+    background-color: white;
 }
 
-    .icon img {
-        width: 100%
-    }
+.icons-wrapper{
+    position: absolute;
+    gap: 100px;
+    top: 1760px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.icon{
+    width:100px;
+    height:100px;
+    background-color: black;
+    border-radius: 50%;
+}
 
 /*HOME-portifolio*/
 
 .HOME-portfolio {
-    padding: 15px 0;
+    padding: 60px 0 15px 0;
     background-color: #c4c4c4;
 }
 
@@ -133,12 +139,12 @@
 }
 
 .image {
-    padding: 10px;
+    padding: 50px;
 }
 
-    .image img {
-        width: 100%;
-    }
+.image img {
+    width: 100%;
+}
 
 .link-wrapper {
     justify-content: center;
