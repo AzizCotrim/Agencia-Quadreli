@@ -85,6 +85,10 @@
     border-radius: 10px;
 }
 
+.link:hover{
+    color: white;
+}
+
 /*HOME-sevicos*/
 
 .HOME-servicos {
@@ -130,7 +134,7 @@
 
 .HOME-portfolio {
     padding: 60px 0 15px 0;
-    background-color: #c4c4c4;
+    background-color: white;
 }
 
 .mosaico {
@@ -147,15 +151,29 @@
 }
 
 .link-wrapper {
-    justify-content: center;
+     justify-content: center;
     margin-bottom: 30px;
+
+}
+
+.link-wrapper > a {
+    display: inline-block;
+    background-color: #b41f29;
+    align-items: center;
+    height: 50px;
+    border-radius: 50px;
+    font-size: 20px
 }
 
 /*HOME-depoimentos*/
 
 .HOME-depoimentos {
     padding: 30px 0 60px 0;
-    background-color: dimgray;
+    background-color: #323232;
+}
+
+.HOME-depoimentos .titulo{
+    color: white;
 }
 
 .depoimentos-wrapper {
@@ -174,17 +192,17 @@
     font-size: 18px;
 }
 
-    .depoimento-slide.active {
-        display: block;
-    }
+.depoimento-slide.active {
+    display: block;
+}
 
-    .depoimento-slide img {
-        background-color: green;
-        height: 40px;
-        width: 40px;
-        border-radius: 50%;
-        margin-right: 10px;
-    }
+.depoimento-slide img {
+    background-color: green;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
 
 .dots-wrapper {
     margin-top: 10px;
@@ -202,6 +220,6 @@
     transition: background-color 0.3s;
 }
 
-    .dot.active {
-        background-color: #333;
-    }
+.dot.active {
+    background-color: white;
+}

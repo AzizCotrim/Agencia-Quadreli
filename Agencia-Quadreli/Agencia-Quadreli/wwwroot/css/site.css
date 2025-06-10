@@ -39,10 +39,14 @@ body{
 
 /*Menu-cima*/
 
-.logo {
+.logo-header {
     width: 50px;
     height: 50px;
-    background-color: white;
+    text-align: center;
+}
+
+.logo-header > img{
+    height: 100%;
 }
 
 .menu-cima .container{
@@ -71,22 +75,26 @@ section:first-of-type {
 
 /*RODAPE*/
 
-.rodape{
-    padding:
-    flex-wrap: wrap;
-    background-color: black;
+.rodape {
+    background-color: #323232;
     justify-content: center;
     align-items: center;
-
 }
 
-.rodape > .logo{
-    width:100px;
-    height:100px;
+.logo-footer {
+    text-align: center;
+    height: 100px;
+}
+
+.logo-footer > img{
+    height: 100%;
 }
 
 .rodape p{
+    text-align: center;
     width: 100%;
     color: white;
+    padding: 20px;
     margin: 0;
+    font-size: 22px;
 }
