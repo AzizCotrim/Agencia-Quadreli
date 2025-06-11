@@ -18,6 +18,8 @@
     color: white;
 }
 
+
+
 .overlay {
     background-color: rgba(0, 0, 0, 0.5);
     width: 100%;
@@ -45,28 +47,29 @@
 
 .envolto {
     justify-content: space-between;
-    padding: 40px 60px;
+    padding: 40px 70px;
     flex-wrap: wrap;
 }
 .envolto h4{
+    font-family: My-AvenirBold;
     width: 100%;
     text-align:center;
     padding-bottom: 35px;
 }
 
 .imagem {
-    width: 440px;
-    height: 440px;
+    width: 450px;
+    height: 450px;
 }
 
 .texto {
-    width: 500px;
+    width: 550px;
     justify-items: center;
     padding: 10px 0;
-    font-size: 18px;
 }
 
 .texto p {
+    font-size: 20px;
     text-align: justify;
 }
 
@@ -78,6 +81,7 @@
 }
 
 .link {
+    font-family: My-AvenirBold;
     padding: 10px 50px;
     background-color: grey;
     text-decoration: none;
@@ -100,6 +104,11 @@
 .servicos-wrapper {
     flex-wrap: wrap;
     justify-content: space-between;
+    padding: 0px 30px;
+}
+
+.texto-servicos{
+    padding: 0 40px;
 }
 
 .servicos-wrapper p{
@@ -110,22 +119,22 @@
 
 .quadro-servico{
     margin: 30px 0px;
-    width: 400px;
-    height: 250px;
+    width: 370px;
+    height: 230px;
     background-color: white;
 }
 
 .icons-wrapper{
     position: absolute;
     gap: 100px;
-    top: 1760px;
+    top: 1775px;
     left: 50%;
     transform: translateX(-50%);
 }
 
 .icon{
-    width:100px;
-    height:100px;
+    width:90px;
+    height:90px;
     background-color: black;
     border-radius: 50%;
 }
@@ -178,30 +187,46 @@
 
 .depoimentos-wrapper {
     position: relative;
-    width: 60%;
+    width: 500px;
     margin: 20px auto;
     text-align: center;
-    padding: 40px;
-    background: #f4f4f4;
-    border-radius: 10px;
+    padding: 16px;
+    background: white;
+    border-radius: 40px;
     box-shadow: 0 0 10px black;
 }
 
 .depoimento-slide {
     display: none;
-    font-size: 18px;
+}
+
+.depoimento-slide .profile-info{
+    display: block;
+    text-align: left;
+    margin-bottom: 12px;
+    margin:0;
+}
+
+.depoimento-slide p{
+    text-align:right;
+    display: inline-block;
+    width: 400px;
+    font-size: 16px;
+    margin: 0;
 }
 
 .depoimento-slide.active {
-    display: block;
+    display:block;
+    position:relative;
 }
 
 .depoimento-slide img {
     background-color: green;
-    height: 40px;
-    width: 40px;
+    height: 60px;
+    width: 60px;
     border-radius: 50%;
     margin-right: 10px;
+    object-fit: cover;
 }
 
 .dots-wrapper {

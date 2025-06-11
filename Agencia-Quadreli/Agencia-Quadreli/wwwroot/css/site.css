@@ -1,8 +1,16 @@
 /*Geral*/
+
 @font-face{
-    font-family: 'My-Avenir';
+    font-family: 'My-AvenirLight';
+    src:url('../fonts/Avenir Font Family/AvenirLTStd-Light.otf');
+    font-weight:lighter;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'My-AvenirBold';
     src: url('../fonts/Avenir Font Family/AvenirLTStd-Medium.otf') format('opentype');
-    font-weight: normal;
+    font-weight: bold;
     font-style: normal;
 }
 
@@ -12,12 +20,13 @@
     box-sizing: border-box;
 }
 body{
-    font-family: My-Avenir;
+    font-family: My-AvenirLight;
 }
 
 .container{
     padding: 0 2%;
     max-width: 1360px;
+    text-align: center
 }
 
 .fora {
@@ -33,8 +42,8 @@ body{
 }
 
 .titulo{
+    font-family: My-AvenirBold;
     text-align: center;
-
 }
 
 /*Menu-cima*/
