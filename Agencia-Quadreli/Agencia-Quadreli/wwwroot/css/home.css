@@ -9,6 +9,7 @@
 }
 
 .texto-header {
+    width: 100%;
     position: absolute;
     z-index: 9;
     top: 50%;
@@ -18,9 +19,17 @@
     color: white;
 }
 
+.texto-header h1 {
+    font-size: 60pt;
+    font-family: Ailerons;
+}
 
+.texto-header h3 {
+    font-size: 28pt;
+}
 
 .overlay {
+    position: absolute;
     background-color: rgba(0, 0, 0, 0.5);
     width: 100%;
     height: 100%;
@@ -33,9 +42,12 @@
     left: 0;
     position: absolute;
     z-index: 1;
-    overflow: hidden;
-    background-image: url(../img/banners/imagem-header.jpg);
-    background-size: cover;
+}
+
+.imagem-header img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 /*HOME-about*/
@@ -102,6 +114,7 @@
 }
 
 .servicos-wrapper {
+    position: relative;
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 0px 30px;
@@ -127,7 +140,7 @@
 .icons-wrapper{
     position: absolute;
     gap: 100px;
-    top: 1775px;
+    top: 440px;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -135,8 +148,10 @@
 .icon{
     width:90px;
     height:90px;
-    background-color: black;
     border-radius: 50%;
+    background-size: 200%;
+    background-repeat: no-repeat;
+    background-position:center;
 }
 
 /*HOME-portifolio*/
@@ -161,8 +176,7 @@
 
 .link-wrapper {
      justify-content: center;
-    margin-bottom: 30px;
-
+    margin-bottom: 30px
 }
 
 .link-wrapper > a {
@@ -179,6 +193,11 @@
 .HOME-depoimentos {
     padding: 30px 0 60px 0;
     background-color: #323232;
+    position:relative
+}
+
+.HOME-depoimentos > .container{
+    position: relative;
 }
 
 .HOME-depoimentos .titulo{
@@ -186,30 +205,33 @@
 }
 
 .depoimentos-wrapper {
-    position: relative;
     width: 500px;
     margin: 20px auto;
     text-align: center;
     padding: 16px;
     background: white;
-    border-radius: 40px;
+    border-radius: 30px;
     box-shadow: 0 0 10px black;
+    z-index: 5;
 }
 
 .depoimento-slide {
     display: none;
 }
 
-.depoimento-slide .profile-info{
-    display: block;
+.depoimento-slide .profile-info {
+    position: relative;
     text-align: left;
     margin-bottom: 12px;
-    margin:0;
+    height: 120px;
+    margin: 0;
 }
 
 .depoimento-slide p{
+    position: absolute;
+    right:10px;
+    top: 50px;
     text-align:right;
-    display: inline-block;
     width: 400px;
     font-size: 16px;
     margin: 0;
@@ -227,6 +249,22 @@
     border-radius: 50%;
     margin-right: 10px;
     object-fit: cover;
+}
+
+.aspas{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+}
+
+.aspas-abre{
+    top: -35px;
+    left: 350px;
+}
+
+.aspas-fecha{
+    top: 80px;
+    right: 350px;
 }
 
 .dots-wrapper {
