@@ -31,6 +31,8 @@
 .overlay {
     position: absolute;
     background-color: rgba(0, 0, 0, 0.5);
+    top:0;
+    left:0;
     width: 100%;
     height: 100%;
 }
@@ -163,16 +165,68 @@
 
 .mosaico {
     grid-template-columns: repeat(3, 1fr);
-    margin-bottom: 20px;
+    margin: 40px 0 20px 0;
     padding: 0 50px;
+    gap: 100px;
 }
 
 .image {
-    padding: 50px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.overlay-image {
+    display: none;
+    justify-content: center;
+}
+
+.image:hover > .overlay-image {
+    display: flex;
+    
+}
+
+.overlay-info{
+    margin: auto 0;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.overlay-info p {
+    width: 100%;
+    height: 50px;
+    margin: 0;
+    text-align: center;
+    color: white;
+}
+
+#MarcaNome {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+#MarcaCategoria{
+    font-size: 20px
+}
+
+.overlay-info a {
+    margin: 0 auto;
+    width: 100px;
+    padding: 7px 0;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    border: 1px solid white;
+    border-radius:30px;
+
 }
 
 .image img {
+    display:block;
     width: 100%;
+    object-fit: cover;
 }
 
 .link-wrapper {
@@ -260,12 +314,12 @@
 
 .aspas-abre{
     top: -35px;
-    left: 350px;
+    left: 330px;
 }
 
 .aspas-fecha{
-    top: 80px;
-    right: 350px;
+    top: 85px;
+    right: 330px;
 }
 
 .dots-wrapper {
