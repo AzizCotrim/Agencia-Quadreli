@@ -164,6 +164,7 @@
 .mosaico {
     grid-template-columns: repeat(3, 1fr);
     margin-bottom: 20px;
+    padding: 0 50px;
 }
 
 .image {
