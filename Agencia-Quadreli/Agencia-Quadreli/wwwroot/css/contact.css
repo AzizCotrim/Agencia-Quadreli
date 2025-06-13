@@ -1,5 +1,6 @@
 ﻿.container {
     justify-content: center;
+    padding-top: 100px;
 }
 
 .form-wrapper {
@@ -22,9 +23,9 @@ h1 {
     color: black;
 }
 
-    .form-line label {
-        font-size: 18px;
-    }
+.form-line label {
+    font-size: 18px;
+}
 
 input {
     width: 400px;
@@ -43,3 +44,42 @@ button {
     width: 150px;
     height: 40px;
 }
+
+/*Whatsapp*/
+
+.zap-wrapper{
+    width: 500px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 100px;
+    padding-top: 30px;
+}
+
+.zap-icon{
+    margin: 0 auto;
+    width: 200px;
+    height: 200px;
+    background-image: url(../img/icons/whatsapp-glyph-black-logo-svgrepo-com.svg);
+    background-size: contain;
+}
+
+.zap-texto{
+    text-align: center;
+}
+
+.zap-wrapper p{
+    text-align: center;
+    padding: 10px 0;
+    font-size: 20px;
+}
+
+.zap-wrapper a{
+    width: 100px;
+    padding: 8px 20px;
+    text-align: center;
+    border: 1px solid black;
+    color: black;
+    text-decoration: none;
+    border-radius: 10px;
+}
+

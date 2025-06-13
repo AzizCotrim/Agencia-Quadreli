@@ -1,9 +1,7 @@
-﻿section{
-    background-color: #c2c2c2;
-}
-.container{
+﻿.container {
     text-align: center;
-    padding-top: 10px;
+    background-color: #c2c2c2;
+    padding-top: 90px;
 }
 
 .select-bar{
@@ -21,8 +19,8 @@
 .selection-wrapper{
     display: grid;
     grid-template-columns: repeat(3, auto);
-    gap: 12px;
-    padding-bottom: 20px;
+    gap: 90px;
+    padding: 0 50px 30px 50px;
 }
 
 .selected-image img{
