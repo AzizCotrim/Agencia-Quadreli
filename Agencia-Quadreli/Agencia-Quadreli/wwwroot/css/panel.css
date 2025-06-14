@@ -1,0 +1,40 @@
+﻿.Panel > .container{
+    background-color: green;
+}
+
+/*Barra lateral*/
+
+.sidebar{
+    position: fixed;
+    width: 300px;
+    height: 100vh;
+    background-color: grey;
+}
+
+.sidebar li, .sidebar ul {
+    list-style-type: none;
+}
+
+.sidebar a, .sidebar span{
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+/*Conteudo do painel*/
+
+.conteudo-panel {
+    margin-left: 300px;
+    width: calc(100% - 300px);
+    background-color: red;
+    padding: 30px 2%;
+}
+
+.line{
+    height: 1px;
+    background-color: black;
+}
+
+.content{
+
+}

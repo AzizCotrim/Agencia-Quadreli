@@ -1,3 +1,50 @@
 ﻿@{
     ViewData["Title"] = "Painel de Controle";
+    ViewData["SemMenuFooter"] = true;
 }
+
+<head>
+    <link href="~/css/panel.css" rel="stylesheet" />
+</head>
+
+<section class="Panel">
+    <div class="container">
+        <nav class="sidebar">
+            <ul>
+                <li><a href="/Panel/dashbord">Inicio</a></li>
+
+                <li>
+                    <span>Conteudo</span>
+                    <ul>
+                        <li><a href="#textos">Textos</a></li>
+                        <li><a href="#imagens">Imagens</a></li>
+                        <li><a href="#servicos">Servicos</a></li>
+                        <li><a href="#depoimentos">Depoimentos</a></li>
+                        <li><a href="#portifolio">Portifolio</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <span>Configuracoes</span>
+                    <ul>
+                        <li><a href="#contato">Contato</a></li>
+                        <li><a href="#seo">SEO</a></li>
+                        <li><a href="#config">Geral</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="#usuarios">Usuarios</a></li>
+            </ul>
+        </nav><!--menu-->
+        <div class="conteudo-panel">
+            <div class="main-wrapper">
+                <h4>Inicio</h4>
+                <div class="line"></div>
+
+                <div class="content">
+                    
+                </div>
+            </div><!--main-wrapper-->
+        </div><!--conteudo-panel-->
+    </div><!--container-->
+</section>

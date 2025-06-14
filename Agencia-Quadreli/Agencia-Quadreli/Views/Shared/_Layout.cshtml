@@ -1,42 +1,51 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - Agencia_Quadreli</title>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-</head>
-<body>
-    <header>
-        <nav class="menu-cima fixed-top">
-            <div class="container">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">
-                    <div class="logo-header"><img src="~/img/logo/WhiteLogo.png"/></div><!--substituir por <img> depois>-->
-                </a>
-                <div class="menu-link">
-                    <a class="menu-opt" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                    <a class="menu-opt" asp-area="" asp-controller="Portfolio" asp-action="Index">Portifolio</a>
-                    <a class="menu-opt" asp-area="" asp-controller="Contact" asp-action="Index">Contato</a>
-                </div><!--menu-link->
-            </div><!--container-->
-        </nav><!--Menu-cima-->
-    </header>
-    <div class="container fora">
-        <main role="main">
-            @RenderBody()
-        </main>
-    </div>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>@ViewData["Title"] - Agencia-Quadreli</title>
+        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    </head>
+    <body>
+        @if (!(ViewData["SemMenuFooter"] as bool? ?? false)){
+            
+            <header>
+                <nav class="menu-cima fixed-top">
+                    <div class="container">
+                        <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">
+                            <div class="logo-header"><img src="~/img/logo/WhiteLogo.png"/></div><!--substituir por <img> depois>-->
+                        </a>
+                        <div class="menu-link">
+                            <a class="menu-opt" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                            <a class="menu-opt" asp-area="" asp-controller="Portfolio" asp-action="Index">Portifolio</a>
+                            <a class="menu-opt" asp-area="" asp-controller="Contact" asp-action="Index">Contato</a>
+                        </div><!--menu-link->
+                    </div><!--container-->
+                </nav><!--Menu-cima-->
+            </header>
 
-    <footer class="footer text-muted">
-        <div class="container rodape">
-            <div class="logo-footer"><img src="~/img/logo/WhiteLogo.png" /></div>
-            <p>&copy; 2025 - Agencia Quadreli</p>
-        </div><!--rodape-->
-    </footer>
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
-    @await RenderSectionAsync("Scripts", required: false)
-</body>
+        }
+
+        <div class="container fora">
+            <main role="main">
+                @RenderBody()
+            </main>
+        </div>
+
+        @if (!(ViewData["SemMenuFooter"] as bool? ?? false)){
+
+            <footer class="footer text-muted">
+                <div class="container rodape">
+                    <div class="logo-footer"><img src="~/img/logo/WhiteLogo.png" /></div>
+                    <p>&copy; 2025 - Agencia Quadreli</p>
+                </div><!--rodape-->
+            </footer>
+        }
+
+        <script src="~/lib/jquery/dist/jquery.min.js"></script>
+        <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="~/js/site.js" asp-append-version="true"></script>
+        @await RenderSectionAsync("Scripts", required: false)
+    </body>
 </html>
