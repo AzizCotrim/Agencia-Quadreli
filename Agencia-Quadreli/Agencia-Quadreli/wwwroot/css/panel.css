@@ -1,24 +1,43 @@
-﻿.Panel > .container{
-    background-color: green;
-}
-
-/*Barra lateral*/
+﻿/*Barra lateral*/
 
 .sidebar{
     position: fixed;
     width: 300px;
     height: 100vh;
     background-color: grey;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
 }
 
-.sidebar li, .sidebar ul {
+.sidebar ul {
     list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
 
 .sidebar a, .sidebar span{
-    font-size: 20px;
+    font-size: 18px;
     color: white;
     text-decoration: none;
+    display: block;
+    padding: 15px 20px;
+    transition: background-color 0.3s ease
+}
+
+.sidebar li:hover > a,
+.sidebar li:hover > span{
+    background-color: #444;
+}
+
+.sidebar .conteudos,
+.sidebar .configuracoes{
+    display: none;
+    background-color: #2a2a2a;
+}
+
+.sidebar .conteudos a,
+.sidebar .configuracoes a {
+    padding-left: 40px;
+    font-size: 16px;
 }
 
 /*Conteudo do painel*/
@@ -26,13 +45,12 @@
 .conteudo-panel {
     margin-left: 300px;
     width: calc(100% - 300px);
-    background-color: red;
     padding: 30px 2%;
 }
 
 .line{
     height: 1px;
-    background-color: black;
+    background-color: #ccc;
 }
 
 .content{
