@@ -22,7 +22,7 @@ namespace Agencia_Quadreli.Controllers
                 case "Imagens":
                     return PartialView("_Imagens");
 
-                case "Serviços":
+                case "Servicos":
                     return PartialView("_Serviços");
 
                 case "Depoimentos":
