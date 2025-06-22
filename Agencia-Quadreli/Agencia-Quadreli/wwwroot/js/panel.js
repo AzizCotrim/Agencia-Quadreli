@@ -15,13 +15,19 @@
             }
         });
     }
-    $(".ajax-link").on('click', function (event) {
-        event.preventDefault();
+    $(".ajax-link").on('click', function () {
         var url = $(this).attr('href');
         carregarConteudo(url);
-        return false;
     });
 
     var urlInicial = '/Panel/Dashboard';
-    carregarConteudo(urlInicial)
+    carregarConteudo(urlInicial);
+
+    $('#conteudos').on('click', function () {
+        $('.conteudos').toggleClass('open-menu');
+    });
+
+    $('#configuracoes').on('click', function () {
+        $('.configuracoes').toggleClass('open-menu');
+    });
 });

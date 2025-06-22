@@ -26,6 +26,7 @@
 .sidebar span{
     display:flex;
     justify-content: space-between;
+    cursor: pointer;
 }
 
 .sidebar li:hover > a,
@@ -34,9 +35,16 @@
 }
 
 .sidebar .conteudos,
-.sidebar .configuracoes{
-    display: none;
+.sidebar .configuracoes {
+    max-height: 0;
+    overflow: hidden;
     background-color: #2a2a2a;
+    transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.sidebar .open-menu {
+    max-height: 500px;
+    
 }
 
 .sidebar .conteudos a,
