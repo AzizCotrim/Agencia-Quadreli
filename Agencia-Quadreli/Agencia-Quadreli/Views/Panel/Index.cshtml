@@ -3,37 +3,41 @@
     ViewData["SemMenuFooter"] = true;
 }
 
-<head>
+@section Styles{
     <link href="~/css/panel.css" rel="stylesheet" />
-</head>
+}
+
+@section Scripts {
+    <script src="~/js/panel.js" asp-append-version="true"></script>
+}
 
 <section class="Panel">
     <div class="container">
         <nav class="sidebar">
             <ul>
-                <li><a href="/Panel/dashbord">Inicio</a></li>
+                <li><a class="ajax-link" href="#">Inicio</a></li>
 
                 <li>
                     <span>Conteudos</span>
                     <ul class="conteudos">
-                        <li><a href="#textos">Textos</a></li>
-                        <li><a href="#imagens">Imagens</a></li>
-                        <li><a href="#servicos">Servicos</a></li>
-                        <li><a href="#depoimentos">Depoimentos</a></li>
-                        <li><a href="#portifolio">Portifolio</a></li>
+                        <li><a class="ajax-link" href="/Panel/textos">Textos</a></li>
+                        <li><a class="ajax-link" href="/Panel/imagens">Imagens</a></li>
+                        <li><a class="ajax-link" href="/Panel/servicos">Servicos</a></li>
+                        <li><a class="ajax-link" href="/Panel/depoimentos">Depoimentos</a></li>
+                        <li><a class="ajax-link" href="/Panel/portifolio">Portifolio</a></li>
                     </ul>
                 </li>
 
                 <li>
                     <span>Configuracoes</span>
                     <ul class="configuracoes">
-                        <li><a href="#contato">Contato</a></li>
-                        <li><a href="#seo">SEO</a></li>
-                        <li><a href="#config">Geral</a></li>
+                        <li><a class="ajax-link" href="#contato">Contato</a></li>
+                        <li><a class="ajax-link" href="#seo">SEO</a></li>
+                        <li><a class="ajax-link" href="#geral">Geral</a></li>
                     </ul>
                 </li>
 
-                <li><a href="#usuarios">Usuarios</a></li>
+                <li><a class="ajax-link" href="#usuarios">Usuarios</a></li>
             </ul>
         </nav><!--menu-->
         <div class="conteudo-panel">
@@ -48,3 +52,5 @@
         </div><!--conteudo-panel-->
     </div><!--container-->
 </section>
+
+
