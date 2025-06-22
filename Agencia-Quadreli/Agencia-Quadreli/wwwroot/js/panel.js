@@ -1,13 +1,12 @@
 ﻿$(function () {
-    $(".ajax-link").on('click', function (event) {
-        event.preventDefault();
-        var url = $(this).attr('href');
+
+    function carregarConteudo(url) {
         var nomeDaSecao = url.split('/')[2];
 
         $.ajax({
             url: '/Panel/CarregarSessao',
             type: 'GET',
-            data: {nomeDaSecao: nomeDaSecao},
+            data: { nomeDaSecao: nomeDaSecao },
             success: function (response) {
                 $('#conteudo-dinamico').html(response);
             },
@@ -15,5 +14,14 @@
                 alert('Ocorreu um erro!');
             }
         });
+    }
+    $(".ajax-link").on('click', function (event) {
+        event.preventDefault();
+        var url = $(this).attr('href');
+        carregarConteudo(url);
+        return false;
     });
+
+    var urlInicial = '/Panel/Dashboard';
+    carregarConteudo(urlInicial)
 });
