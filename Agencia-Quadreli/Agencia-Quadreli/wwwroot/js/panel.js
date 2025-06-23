@@ -2,7 +2,6 @@
 
     function carregarConteudo(url) {
         var nomeDaSecao = url.split('/')[2];
-
         $.ajax({
             url: '/Panel/CarregarSessao',
             type: 'GET',
@@ -15,7 +14,8 @@
             }
         });
     }
-    $(".ajax-link").on('click', function () {
+    $(".ajax-link").on('click', function (event) {
+        event.preventDefault();
         var url = $(this).attr('href');
         carregarConteudo(url);
     });
