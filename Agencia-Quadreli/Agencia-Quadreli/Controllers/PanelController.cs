@@ -14,6 +14,7 @@ namespace Agencia_Quadreli.Controllers
             switch (nomeDaSecao)
             {
                 case "Dashboard":
+                    ViewBag.TituloDaPagina = "Dashboard";
                     return PartialView("_Dashboard");
 
                 case "Textos":
